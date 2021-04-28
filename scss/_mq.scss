@@ -1,0 +1,319 @@
+$my-blue: #0099CC;
+$offwhite: #eeeeee;
+$my-black: #333333;
+
+
+/* media queries begin */
+// tablets
+@media only screen and (max-width: 1000px) {
+  // headings and copy
+  h1 {
+    font-size: 2.4vw;
+  }
+
+  h3,
+  h4 {
+    font-size: 2vw;
+  }
+
+  h5,
+  h6 {
+    font-size: 1.6vw;
+  }
+
+  p,
+  ul {
+    font-size: 1.3vw;
+  }
+  // buttons
+  .learn-more-btn-hero {
+    font-size: 12px;
+    padding: 10px 50px;
+    border: 1px solid $offwhite;
+  }
+
+  .learn-more-btn-hero:hover {
+    border: 1px solid $my-blue;
+  }
+
+  .learn-more-btn-body {
+    font-size: 12px;
+    padding: 8px 35px;
+    border: 1px solid $my-blue;
+  }
+
+  .learn-more-btn-body:hover {
+    border: 1px solid $my-blue;
+  }
+
+  .pre-order-btn-body {
+    font-size: 12px;
+    padding: 10px 40px;
+    border: 1px solid $my-blue;
+  }
+
+  .pre-order-btn-body:hover {
+    border: 1px solid $my-blue;
+  }
+
+  .learn-more-btn-footer {
+    font-size: 8px;
+    padding: 8px 30px;
+  }
+
+  .pre-order-btn-nav {
+    font-size: 10px;
+  }
+
+  .pre-order-btn-nav:hover {
+    border: 1px solid $my-blue;
+  }
+  // navigation
+  .top-nav-inner {
+    width: 83.2vw;
+    margin: 0 8.4vw;
+  }
+
+  .top-nav-inner a {
+    font-size: 10px;
+  }
+
+  .nav-inner {
+    width: 83.2vw;
+  }
+
+  .nav-inner a {
+    font-size: 10px;
+  }
+
+  .scroll-btn {
+    font-size: 2.5vw;
+    border: 1px solid #eee;
+    padding: 2px;
+  }
+
+  // footer
+  .footer-section {
+    p, a {
+      font-size: 12px;
+    }
+  }
+  // tablets queris end
+}
+// mobiles
+@media only screen and (max-width: 768px) {
+
+  // navigation
+  .nav,
+  .scroll-btn,
+  .top-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    width: 86vw;
+    top: 0;
+    margin: 0 7vw;
+    z-index: 1001;
+
+    i{
+      font-size: 32px;
+      color: $my-black;
+
+    }
+  }
+
+  .mobile-nav-logo img {
+    align-items: center;
+    width: 200px;
+    margin: 20px 0;
+  }
+
+  .popup-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $my-black;
+    -moz-box-sizing: border-box;
+  box-sizing:border-box;
+    z-index: 99999;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+  }
+
+  .menu-top-section {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: flex-end;
+    right: 0;
+    width: 86vw;
+    margin: 33px 7vw;
+    z-index: 1001;
+
+    i {
+      font-size: 34px;
+      color: $offwhite;
+  }
+}
+
+.menu {
+    text-align: center;
+    width: 80%;
+    margin: 40px 5%;
+
+  ul, a {
+      color: $offwhite;
+      font-weight: 400;
+      text-decoration: none;
+      list-style-type: none;
+      transition: ease 0.3s;
+      font-size: 6vw;
+      line-height: 120px;
+    }
+
+    button {
+      font-size: 4vw;
+      border: 2px solid $offwhite;
+    }
+
+}
+
+
+
+  // responsive divs
+  .box {
+    width: 83.2vw;
+    margin: 0 8.4vw 40px 8.4vw;
+    padding-top: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .box-image {
+  width: 100vw;
+  padding-top: 0;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+  .box-reverse {
+    width: 83.2vw;
+    margin: 0 8.4vw 60px 8.4vw;
+    padding-top: 0;
+    flex-direction: column-reverse;
+  }
+
+  .box-content {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .box-text {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+
+    h1, h3, h4, h5, h6, p, hr, div, ul {
+      padding: 0 10%;
+    }
+  }
+
+  .box-row {
+    width: 100%;
+    padding: 3px;
+  }
+
+// overview page extra edit
+
+.product-info-section {
+  margin-top: 60px;
+}
+.why-info {
+  margin: 0 0 60px 0;
+}
+
+.why-image {
+
+  img {
+    width: 100%;
+  }
+}
+
+// why riverwatch extra editing
+
+.mission-section {
+margin-top: 60px;
+}
+.mission-image, .impact-image {
+  display: none;
+}
+
+.mission-column {
+  // margin: 0 8.4vw 60px 8.4vw;
+  width: 100%;
+}
+
+.mission-text, .impact-text {
+  width: 100%;
+  margin: 0;
+  p {
+    font-size: 12px;
+  }
+}
+
+// footer
+
+.footer-section {
+  justify-content: flex-end;
+  width: 74vw;
+  margin: 40px 16.8vw 40px 8.4vw;
+
+  p, a {
+    font-size: 10px;
+  }
+}
+
+
+.about {
+  display: none;
+}
+
+.footer-logo {
+  display: none;
+}
+
+.quick-links, .contact {
+  width: 30vw;
+}
+
+  // headings and copy
+h1 {
+  font-size: 20px;
+}
+
+h3,
+h4 {
+  font-size: 16px;
+}
+
+h5,
+h6 {
+  font-size: 14px;
+}
+
+p,
+ul {
+  font-size: 12px;
+}
+
+}
