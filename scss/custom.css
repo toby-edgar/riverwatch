@@ -1153,6 +1153,9 @@ ul {
     .mission-text p, .impact-text p {
       font-size: 12px; }
 
+  .form-section {
+    padding-bottom: 200px; }
+
   .footer-section {
     justify-content: flex-end;
     width: 74vw;
